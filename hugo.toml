@@ -1,5 +1,59 @@
-languageCode = 'en-us'
-title = 'Koen van der Borght'
-theme = "PaperMod"
 baseURL = "https://KoenvanderBorght-Dev.github.io/"
+languageCode = "en-us"
+title = "Koen van der Borght"
+theme = "PaperMod"
 publishDir = "docs"
+
+[params]
+  description = "Senior developer, technical lead, and lifelong learner."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  defaultTheme = "light"
+
+[params.homeInfoParams]
+  Title = "Hi, I'm Koen"
+  Content = "Senior developer & tech lead with a passion for performance, architecture, and practical AI."
+
+[params.assets]
+  disableHLJS = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[params.social]
+  title = "Koen van der Borght"
+  image = "images/og-preview.png"
+  description = "Senior developer & tech lead with a passion for performance and architecture."
+  type = "website"
