@@ -1,0 +1,25 @@
+# Hugo caches and temporary files
+resources/
+hugo_stats.json
+.DS_Store
+
+# Backup and temp files
+*.bak
+*.swp
+*.swo
+*~
+
+# Node (optioneel, alleen als je npm tooling gebruikt voor thema's)
+node_modules/
+
+# IDE/Editor folders
+.vscode/
+
+# Netlify/Vercel folders (indien van toepassing)
+.netlify/
+.vercel/
+
+# Do NOT ignore docs/, since it contains the static output for GitHub Pages
+# public/ wordt niet gebruikt, maar kan geen kwaad om toch te negeren
+public/
+

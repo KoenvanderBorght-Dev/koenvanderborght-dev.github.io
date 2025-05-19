@@ -1,0 +1,5 @@
+languageCode = 'en-us'
+title = 'Koen van der Borght'
+theme = "PaperMod"
+baseURL = "https://KoenvanderBorght-Dev.github.io/"
+publishDir = "docs"
