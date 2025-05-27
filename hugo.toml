@@ -1,7 +1,7 @@
 baseURL = "https://KoenvanderBorght-Dev.github.io/"
 languageCode = "en-us"
 title = "Koen van der Borght"
-theme = "PaperMod"
+theme = "terminal-dev"
 publishDir = "docs"
 
 [params]
@@ -13,6 +13,7 @@ publishDir = "docs"
   ShowBreadCrumbs = true
   ShowToc = true
   defaultTheme = "light"
+  enableTaglineTypingEffect = false
 
 [params.homeInfoParams]
   Title = "Hi, I'm Koen"

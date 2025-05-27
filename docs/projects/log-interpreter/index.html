@@ -1,119 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Log Interpreter Tool | Koen van der Borght</title>
-<meta name="keywords" content="">
-<meta name="description" content="A local log viewer for Serilog-based systems that supports:
-
-Live filtering and level toggling
-Syntax highlighting and clickable exceptions
-Exception grouping and analysis
-
-Built with .NET and WPF. Designed for engineers who want full control over their log debugging workflows.">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Senior developer, technical lead, and lifelong learner.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/projects/log-interpreter/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/log-interpreter/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-</noscript>
-</head>
 
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/">
+<meta property="og:title" content="Log Interpreter Tool | Koen van der Borght">
+<meta property="og:description" content="Senior developer, technical lead, and lifelong learner.">
 
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/">
+<meta property="twitter:title" content="Log Interpreter Tool | Koen van der Borght">
+<meta property="twitter:description" content="Senior developer, technical lead, and lifelong learner.">
+
+<title>Log Interpreter Tool | Koen van der Borght</title>
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://KoenvanderBorght-Dev.github.io/main.667012a0ff3ccc89075d905281f6a022bd461cbce9c1d4cb90caf05ed3f51a40.css" integrity="sha256-ZnASoP88zIkHXZBSgfagIr1GHLzpwdTLkMrwXtP1GkA=">
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "name": "Log Interpreter Tool",
+    "headline": "Log Interpreter Tool",
+    "description": "Senior developer, technical lead, and lifelong learner.",
+    "url": "https:\/\/KoenvanderBorght-Dev.github.io\/projects\/log-interpreter\/",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    },
+    "datePublished": "2025-05-16T00:00:00Z",
+    "dateModified": "2025-05-16T00:00:00Z"
+}
 </script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Koen van der Borght (Alt + H)">Koen van der Borght</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-button btn-close"></div>
+            <div class="terminal-button btn-minimize"></div>
+            <div class="terminal-button btn-maximize"></div>
+            <div class="terminal-title">koenvanderborght: ~/projects</div>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/about/" title="About">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/projects/" title="Projects">
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/posts/" title="Blog">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/contact/" title="Contact">
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
+
+        <header class="header">
+    <div class="logo-container">
+        <div class="logo">></div>
+        <h1 class="site-title">
+            <a href="https://KoenvanderBorght-Dev.github.io/">
+                <span class="accent">@</span>koenvanderborght<span class="accent">:~$</span>
+            </a>
+        </h1>
+    </div>
+    <p class="tagline">Senior developer, technical lead, and lifelong learner.</p>
+    
+    <nav class="nav">
+        <a href="https://KoenvanderBorght-Dev.github.io/" class="nav-item ">~/home</a>
+        <a href="/posts" class="nav-item ">~/blog</a>
+        <a href="/projects" class="nav-item active">~/projects</a>
+        <a href="/about" class="nav-item ">~/about</a>
+        <a href="/contact" class="nav-item ">~/contact</a>
     </nav>
 </header>
-<main class="main">
 
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Log Interpreter Tool
-    </h1>
-    <div class="post-meta"><span title='2025-05-16 00:00:00 +0000 UTC'>May 16, 2025</span>&nbsp;·&nbsp;1 min
-
-</div>
-  </header> 
-
-  <div class="post-content"><p>A local log viewer for Serilog-based systems that supports:</p>
+        <main class="main-content">
+            
+<article class="single-post">
+    <header class="post-header">
+        <h1 class="post-title">Log Interpreter Tool</h1>
+        <div class="post-meta">
+            <span class="post-date">📅 May 16, 2025</span>
+            <span class="post-reading-time">⏱️ 1 min read</span>
+            
+        </div>
+        
+    </header>
+    
+    <div class="post-content">
+        <p>A local log viewer for Serilog-based systems that supports:</p>
 <ul>
 <li>Live filtering and level toggling</li>
 <li>Syntax highlighting and clickable exceptions</li>
@@ -121,140 +102,76 @@ Built with .NET and WPF. Designed for engineers who want full control over their
 </ul>
 <p>Built with .NET and WPF. Designed for engineers who want full control over their log debugging workflows.</p>
 
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-<nav class="paginav">
-  <a class="next" href="http://localhost:1313/projects/pipelineboost/">
-    <span class="title">Next »</span>
-    <br>
-    <span>PipelineBoost</span>
-  </a>
-</nav>
-
-  </footer>
-</article>
-    </main>
+    </div>
     
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Koen van der Borght</a></span> · 
+    <footer class="post-footer">
+        <div class="post-nav">
+            
+            <div class="post-nav-item prev">
+                <span class="post-nav-label">← Previous</span>
+                <a href="https://KoenvanderBorght-Dev.github.io/projects/pipelineboost/" class="post-nav-title">PipelineBoost</a>
+            </div>
+            
+            
+            
+        </div>
+    </footer>
+</article>
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+
+            
+        </main>
+
+
+        <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-title">connect_with_me</h3>
+            <div class="social-links">
+                
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-title">quick_access</h3>
+            <div class="footer-links">
+                <a href="/posts" class="footer-link">~/blog</a>
+                <a href="/projects" class="footer-link">~/projects</a>
+                <a href="/about" class="footer-link">~/about</a>
+                <a href="/index.xml" class="footer-link">~/rss</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-title">system_info</h3>
+            <div class="system-info">
+                <div class="info-line">
+                    <span class="info-label">Built with:</span>
+                    <span class="info-value">Hugo 0.147.3</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">Theme:</span>
+                    <span class="info-value">Terminal Dev</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">Last build:</span>
+                    <span class="info-value">2025-05-27 17:51</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="copyright">
+            <span>© 2025 Koen van der Borght. All rights reserved.</span>
+        </div>
+    </div>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
+    </div>
 
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
+    
 </body>
-
 </html>
