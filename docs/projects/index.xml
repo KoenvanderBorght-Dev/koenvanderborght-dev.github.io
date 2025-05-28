@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Koen van der Borght</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://KoenvanderBorght-Dev.github.io/projects/</link>
     <description>Recent content in Projects on Koen van der Borght</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://KoenvanderBorght-Dev.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Log Interpreter Tool</title>
-      <link>http://localhost:1313/projects/log-interpreter/</link>
+      <link>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/log-interpreter/</guid>
+      <guid>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</guid>
       <description>&lt;p&gt;A local log viewer for Serilog-based systems that supports:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Live filtering and level toggling&lt;/li&gt;&#xA;&lt;li&gt;Syntax highlighting and clickable exceptions&lt;/li&gt;&#xA;&lt;li&gt;Exception grouping and analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Built with .NET and WPF. Designed for engineers who want full control over their log debugging workflows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PipelineBoost</title>
-      <link>http://localhost:1313/projects/pipelineboost/</link>
+      <link>https://KoenvanderBorght-Dev.github.io/projects/pipelineboost/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/pipelineboost/</guid>
+      <guid>https://KoenvanderBorght-Dev.github.io/projects/pipelineboost/</guid>
       <description>&lt;p&gt;PipelineBoost is a service and toolset aimed at optimizing build and release pipelines for software teams.&lt;/p&gt;&#xA;&lt;p&gt;We focus on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build time reduction&lt;/li&gt;&#xA;&lt;li&gt;Environment-specific caching&lt;/li&gt;&#xA;&lt;li&gt;Cross-repository coordination in Azure DevOps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Currently in early validation phase.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Koen van der Borght</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://KoenvanderBorght-Dev.github.io/posts/</link>
     <description>Recent content in Posts on Koen van der Borght</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://KoenvanderBorght-Dev.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I Chose Hugo for My Personal Website</title>
-      <link>http://localhost:1313/posts/why-i-chose-hugo/</link>
+      <link>https://KoenvanderBorght-Dev.github.io/posts/why-i-chose-hugo/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/why-i-chose-hugo/</guid>
+      <guid>https://KoenvanderBorght-Dev.github.io/posts/why-i-chose-hugo/</guid>
       <description>&lt;p&gt;After years of working with .NET and React, I wanted something simple and fast for my personal site. Hugo ticks all the boxes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Markdown-based content&lt;/li&gt;&#xA;&lt;li&gt;Blazing fast build times&lt;/li&gt;&#xA;&lt;li&gt;Works great with GitHub Pages&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here’s how I set it up, and why I’m sticking with it.&lt;/p&gt;</description>
     </item>
   </channel>
