@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Koen van der Borght</title>
-    <link>https://KoenvanderBorght-Dev.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Koen van der Borght</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://KoenvanderBorght-Dev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Log Interpreter Tool</title>
-      <link>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</link>
+      <link>http://localhost:1313/projects/log-interpreter/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</guid>
+      <guid>http://localhost:1313/projects/log-interpreter/</guid>
       <description>&lt;p&gt;A local log viewer for Serilog-based systems that supports:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Live filtering and level toggling&lt;/li&gt;&#xA;&lt;li&gt;Syntax highlighting and clickable exceptions&lt;/li&gt;&#xA;&lt;li&gt;Exception grouping and analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Built with .NET and WPF. Designed for engineers who want full control over their log debugging workflows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PipelineBoost</title>
-      <link>https://KoenvanderBorght-Dev.github.io/projects/pipelineboost/</link>
+      <link>http://localhost:1313/projects/pipelineboost/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://KoenvanderBorght-Dev.github.io/projects/pipelineboost/</guid>
+      <guid>http://localhost:1313/projects/pipelineboost/</guid>
       <description>&lt;p&gt;PipelineBoost is a service and toolset aimed at optimizing build and release pipelines for software teams.&lt;/p&gt;&#xA;&lt;p&gt;We focus on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build time reduction&lt;/li&gt;&#xA;&lt;li&gt;Environment-specific caching&lt;/li&gt;&#xA;&lt;li&gt;Cross-repository coordination in Azure DevOps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Currently in early validation phase.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why I Chose Hugo for My Personal Website</title>
-      <link>https://KoenvanderBorght-Dev.github.io/posts/why-i-chose-hugo/</link>
+      <link>http://localhost:1313/posts/why-i-chose-hugo/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://KoenvanderBorght-Dev.github.io/posts/why-i-chose-hugo/</guid>
+      <guid>http://localhost:1313/posts/why-i-chose-hugo/</guid>
       <description>&lt;p&gt;After years of working with .NET and React, I wanted something simple and fast for my personal site. Hugo ticks all the boxes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Markdown-based content&lt;/li&gt;&#xA;&lt;li&gt;Blazing fast build times&lt;/li&gt;&#xA;&lt;li&gt;Works great with GitHub Pages&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here’s how I set it up, and why I’m sticking with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>https://KoenvanderBorght-Dev.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://KoenvanderBorght-Dev.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;Hi, I’m Koen van der Borght — a passionate software engineer and tech lead with over 8 years of experience. I started as an intern, worked my way up to senior developer, and currently lead the development team at &lt;a href=&#34;https://www.gomocha.com&#34;&gt;Gomocha&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-do&#34;&gt;What I do&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead Agile development teams as Scrum Master&lt;/li&gt;&#xA;&lt;li&gt;Architect solutions in .NET 8 and Microsoft Azure&lt;/li&gt;&#xA;&lt;li&gt;Automate CI/CD pipelines with Azure DevOps&lt;/li&gt;&#xA;&lt;li&gt;Optimize SQL Server performance and legacy systems&lt;/li&gt;&#xA;&lt;li&gt;Explore AI/ML opportunities in predictive work order durations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;fun-facts&#34;&gt;Fun facts&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mechanical keyboard fan (Ergodox with Gateron Browns!)&lt;/li&gt;&#xA;&lt;li&gt;Movie nights with my wife Selina — we love Marvel &amp;amp; Harry Potter&lt;/li&gt;&#xA;&lt;li&gt;Proud dad of our daughter Niya&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let’s build better software, together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://KoenvanderBorght-Dev.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://KoenvanderBorght-Dev.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;Feel free to reach out if you want to collaborate or just have a chat:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;code&gt;koenvanderborght[at]outlook[dot]com&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/koen-van-der-borght-tilburg&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always open to technical discussions, software challenges, or building something cool.&lt;/p&gt;</description>
     </item>
   </channel>
