@@ -9,10 +9,10 @@ Hi, I’m Koen van der Borght — a passionate software engineer and tech lead w
 - Architect solutions in .NET 8 and Microsoft Azure
 - Automate CI/CD pipelines with Azure DevOps
 - Optimize SQL Server performance and legacy systems
-- Explore AI/ML opportunities in predictive work order durations
+- Explore AI/ML opportunities in my workflow and in our products
 
 ### Fun facts
-- Mechanical keyboard fan (Ergodox with Gateron Browns!)
+- Mechanical keyboard fan (Current daily driver is the Ergodox with Gateron Browns!)
 - Movie nights with my wife Selina — we love Marvel & Harry Potter
 - Proud dad of our daughter Niya
 

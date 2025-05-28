@@ -9,11 +9,18 @@
     <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://KoenvanderBorght-Dev.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>.NET 8 migration</title>
+      <link>https://KoenvanderBorght-Dev.github.io/projects/dotnet-8-migration/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://KoenvanderBorght-Dev.github.io/projects/dotnet-8-migration/</guid>
+      <description>&lt;p&gt;Together with the development team at Gomocha, we successfully migrated over 20 components from .NET Framework 4.8 to .NET 8 within approximately 8 weeks.&lt;/p&gt;&#xA;&lt;p&gt;During this process, I modernized our logging framework by transitioning from log4net to Serilog and standardized the configuration by consolidating all &lt;code&gt;appsettings.json&lt;/code&gt; files. Additionally, I introduced &lt;code&gt;Directory.Build.props&lt;/code&gt; and &lt;code&gt;Directory.Packages.props&lt;/code&gt; files to facilitate simpler maintenance and dependency management going forward.&lt;/p&gt;&#xA;&lt;p&gt;I also leveraged this migration as an opportunity to optimize and enhance our build pipeline, significantly streamlining our development and deployment processes.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Log Interpreter Tool</title>
       <link>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
       <guid>https://KoenvanderBorght-Dev.github.io/projects/log-interpreter/</guid>
-      <description>&lt;p&gt;A local log viewer for Serilog-based systems that supports:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Live filtering and level toggling&lt;/li&gt;&#xA;&lt;li&gt;Syntax highlighting and clickable exceptions&lt;/li&gt;&#xA;&lt;li&gt;Exception grouping and analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Built with .NET and WPF. Designed for engineers who want full control over their log debugging workflows.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A local log viewer for Serilog-based systems that supports:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Live filtering and level toggling&lt;/li&gt;&#xA;&lt;li&gt;Syntax highlighting and clickable exceptions&lt;/li&gt;&#xA;&lt;li&gt;Exception grouping and analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Built with .NET8. Designed for engineers who want full control over their log debugging workflows.&lt;/p&gt;&#xA;&lt;p&gt;Currently in early validation phase.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PipelineBoost</title>
@@ -34,7 +41,7 @@
       <link>https://KoenvanderBorght-Dev.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://KoenvanderBorght-Dev.github.io/about/</guid>
-      <description>&lt;p&gt;Hi, I’m Koen van der Borght — a passionate software engineer and tech lead with over 8 years of experience. I started as an intern, worked my way up to senior developer, and currently lead the development team at &lt;a href=&#34;https://www.gomocha.com&#34;&gt;Gomocha&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-do&#34;&gt;What I do&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead Agile development teams as Scrum Master&lt;/li&gt;&#xA;&lt;li&gt;Architect solutions in .NET 8 and Microsoft Azure&lt;/li&gt;&#xA;&lt;li&gt;Automate CI/CD pipelines with Azure DevOps&lt;/li&gt;&#xA;&lt;li&gt;Optimize SQL Server performance and legacy systems&lt;/li&gt;&#xA;&lt;li&gt;Explore AI/ML opportunities in predictive work order durations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;fun-facts&#34;&gt;Fun facts&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mechanical keyboard fan (Ergodox with Gateron Browns!)&lt;/li&gt;&#xA;&lt;li&gt;Movie nights with my wife Selina — we love Marvel &amp;amp; Harry Potter&lt;/li&gt;&#xA;&lt;li&gt;Proud dad of our daughter Niya&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let’s build better software, together.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi, I’m Koen van der Borght — a passionate software engineer and tech lead with over 8 years of experience. I started as an intern, worked my way up to senior developer, and currently lead the development team at &lt;a href=&#34;https://www.gomocha.com&#34;&gt;Gomocha&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-do&#34;&gt;What I do&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead Agile development teams as Scrum Master&lt;/li&gt;&#xA;&lt;li&gt;Architect solutions in .NET 8 and Microsoft Azure&lt;/li&gt;&#xA;&lt;li&gt;Automate CI/CD pipelines with Azure DevOps&lt;/li&gt;&#xA;&lt;li&gt;Optimize SQL Server performance and legacy systems&lt;/li&gt;&#xA;&lt;li&gt;Explore AI/ML opportunities in my workflow and in our products&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;fun-facts&#34;&gt;Fun facts&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mechanical keyboard fan (Current daily driver is the Ergodox with Gateron Browns!)&lt;/li&gt;&#xA;&lt;li&gt;Movie nights with my wife Selina — we love Marvel &amp;amp; Harry Potter&lt;/li&gt;&#xA;&lt;li&gt;Proud dad of our daughter Niya&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let’s build better software, together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
