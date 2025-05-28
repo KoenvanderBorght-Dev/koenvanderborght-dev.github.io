@@ -6,8 +6,15 @@
     <description>Recent content on Koen van der Borght</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://KoenvanderBorght-Dev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompt Engineering Cheat Sheet</title>
+      <link>https://KoenvanderBorght-Dev.github.io/posts/prompt-engineering-cheat-sheet/</link>
+      <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://KoenvanderBorght-Dev.github.io/posts/prompt-engineering-cheat-sheet/</guid>
+      <description>&lt;h2 id=&#34;core-principles&#34;&gt;Core Principles&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-be-clear-and-specific&#34;&gt;1. Be Clear and Specific&lt;/h3&gt;&#xA;&lt;p&gt;Provide detailed instructions and context. Vague prompts lead to vague responses.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Good Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Write a 300-word product description for wireless Bluetooth headphones targeting fitness enthusiasts, highlighting battery life, sweat resistance, and sound quality.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Poor Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Write about headphones.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-use-examples-few-shot-learning&#34;&gt;2. Use Examples (Few-Shot Learning)&lt;/h3&gt;&#xA;&lt;p&gt;Show the AI what you want by providing examples of the desired output format.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Classify these emails as spam or not spam:&#xD;&#xA;&#xD;&#xA;Email: &amp;#39;Congratulations! You&amp;#39;ve won $1M!&amp;#39; → Classification: Spam&#xD;&#xA;Email: &amp;#39;Meeting moved to 3 PM tomorrow&amp;#39; → Classification: Not Spam&#xD;&#xA;Email: &amp;#39;Your order has shipped&amp;#39; → Classification: ?&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-step-by-step-instructions&#34;&gt;3. Step-by-Step Instructions&lt;/h3&gt;&#xA;&lt;p&gt;Break complex tasks into numbered steps to guide the AI through your process.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>.NET 8 migration</title>
       <link>https://KoenvanderBorght-Dev.github.io/projects/dotnet-8-migration/</link>

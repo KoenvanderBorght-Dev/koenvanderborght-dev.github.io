@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Senior developer, technical lead, and lifelong learner.">
+<meta name="author" content="">
+
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://KoenvanderBorght-Dev.github.io/posts/prompt-engineering-cheat-sheet/">
+<meta property="og:title" content="Prompt Engineering Cheat Sheet | Koen van der Borght">
+<meta property="og:description" content="Senior developer, technical lead, and lifelong learner.">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://KoenvanderBorght-Dev.github.io/posts/prompt-engineering-cheat-sheet/">
+<meta property="twitter:title" content="Prompt Engineering Cheat Sheet | Koen van der Borght">
+<meta property="twitter:description" content="Senior developer, technical lead, and lifelong learner.">
+
+<title>Prompt Engineering Cheat Sheet | Koen van der Borght</title>
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://KoenvanderBorght-Dev.github.io/main.b0d7acb974239448a580c8c9d8e1f2c9061b23ff14457833d101771b689d0800.css" integrity="sha256-sNesuXQjlEilgMjJ2OHyyQYbI/8URXgz0QF3G2idCAA=">
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "name": "Prompt Engineering Cheat Sheet",
+    "headline": "Prompt Engineering Cheat Sheet",
+    "description": "Senior developer, technical lead, and lifelong learner.",
+    "url": "https:\/\/KoenvanderBorght-Dev.github.io\/posts\/prompt-engineering-cheat-sheet\/",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    },
+    "datePublished": "2025-05-27T00:00:00Z",
+    "dateModified": "2025-05-27T00:00:00Z"
+}
+</script>
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-button btn-close"></div>
+            <div class="terminal-button btn-minimize"></div>
+            <div class="terminal-button btn-maximize"></div>
+            <div class="terminal-title">koenvanderborght: ~/posts</div>
+        </div>
+
+        <header class="header">
+    <div class="logo-container">
+        <div class="logo">></div>
+        <h1 class="site-title">
+            <a href="https://KoenvanderBorght-Dev.github.io/">koen<span class="accent">@</span>vanderborght<span class="accent">:~$</span>
+            </a>
+        </h1>
+    </div>
+    <p class="tagline">Senior developer, technical lead, and lifelong learner.</p>
+
+    <nav class="nav">
+        <a href="https://KoenvanderBorght-Dev.github.io/" class="nav-item ">~/home</a>
+        <a href="/posts" class="nav-item ">~/blog</a>
+        <a href="/projects" class="nav-item ">~/projects</a>
+        <a href="/about" class="nav-item ">~/about</a>
+        <a href="/contact" class="nav-item ">~/contact</a>
+    </nav>
+</header>
+
+        <main class="main-content">
+            
+<article class="single-post">
+    <header class="post-header">
+        <h1 class="post-title">Prompt Engineering Cheat Sheet</h1>
+        
+        <h2 class="post-subtitle">Master the art of effective AI communication</h2>
+        
+        <div class="post-meta">
+            <span class="post-date">📅 May 27, 2025</span>
+            <span class="post-reading-time">⏱️ 3 min read</span>
+            
+        </div>
+        
+    </header>
+    
+    <div class="post-content">
+        <h2 id="core-principles">Core Principles</h2>
+<h3 id="1-be-clear-and-specific">1. Be Clear and Specific</h3>
+<p>Provide detailed instructions and context. Vague prompts lead to vague responses.</p>
+<p><strong>Good Example:</strong></p>
+<pre tabindex="0"><code>Write a 300-word product description for wireless Bluetooth headphones targeting fitness enthusiasts, highlighting battery life, sweat resistance, and sound quality.
+</code></pre><p><strong>Poor Example:</strong></p>
+<pre tabindex="0"><code>Write about headphones.
+</code></pre><h3 id="2-use-examples-few-shot-learning">2. Use Examples (Few-Shot Learning)</h3>
+<p>Show the AI what you want by providing examples of the desired output format.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>Classify these emails as spam or not spam:
+
+Email: &#39;Congratulations! You&#39;ve won $1M!&#39; → Classification: Spam
+Email: &#39;Meeting moved to 3 PM tomorrow&#39; → Classification: Not Spam
+Email: &#39;Your order has shipped&#39; → Classification: ?
+</code></pre><h3 id="3-step-by-step-instructions">3. Step-by-Step Instructions</h3>
+<p>Break complex tasks into numbered steps to guide the AI through your process.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>Analyze this data step by step:
+1. Identify the main trends
+2. Calculate key statistics
+3. Highlight anomalies
+4. Provide actionable insights
+</code></pre><hr>
+<h2 id="advanced-techniques">Advanced Techniques</h2>
+<h3 id="chain-of-thought">Chain of Thought</h3>
+<p>Ask the AI to show its reasoning process for complex problems.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>Solve this problem step by step, showing your reasoning:
+If a train travels 240 miles in 3 hours, and then 160 miles in 2 hours, what is its average speed for the entire journey?
+</code></pre><h3 id="role-assignment">Role Assignment</h3>
+<p>Give the AI a specific role or persona to improve response quality.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>You are an experienced financial advisor. A 25-year-old just started their first job earning $50k annually. What investment advice would you give them?
+</code></pre><h3 id="output-formatting">Output Formatting</h3>
+<p>Specify the exact format you want for the response.</p>
+<p><strong>Example:</strong></p>
+<pre tabindex="0"><code>Provide your analysis in this format:
+## Summary: [2-3 sentences]
+## Key Points: [bullet list]
+## Recommendations: [numbered list]
+</code></pre><hr>
+<h2 id="dos-and-donts">Do&rsquo;s and Don&rsquo;ts</h2>
+<table>
+  <thead>
+      <tr>
+          <th>✅ <strong>DO</strong></th>
+          <th>❌ <strong>DON&rsquo;T</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Be specific about length and format</td>
+          <td>Use overly complex language</td>
+      </tr>
+      <tr>
+          <td>Provide context and background</td>
+          <td>Make assumptions about context</td>
+      </tr>
+      <tr>
+          <td>Use clear, direct language</td>
+          <td>Ask multiple unrelated questions</td>
+      </tr>
+      <tr>
+          <td>Test and iterate your prompts</td>
+          <td>Ignore the importance of examples</td>
+      </tr>
+      <tr>
+          <td>Break complex tasks into steps</td>
+          <td>Forget to specify output constraints</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="quick-tips">Quick Tips</h2>
+<ul>
+<li><strong>🎯 Specificity:</strong> Replace &ldquo;write something about&hellip;&rdquo; with &ldquo;write a 200-word analysis of&hellip;&rdquo;</li>
+<li><strong>📝 Templates:</strong> Create reusable prompt templates for common tasks to maintain consistency.</li>
+<li><strong>🔄 Iteration:</strong> Refine prompts based on outputs. Small changes can dramatically improve results.</li>
+<li><strong>📊 Structure:</strong> Use headers, bullet points, and numbering to organize complex prompts.</li>
+<li><strong>🎭 Persona:</strong> Assign roles like &ldquo;expert,&rdquo; &ldquo;teacher,&rdquo; or &ldquo;critic&rdquo; to get specialized responses.</li>
+<li><strong>⚡ Constraints:</strong> Set clear boundaries: word limits, tone, audience, and format requirements.</li>
+</ul>
+<hr>
+<h2 id="common-prompt-patterns">Common Prompt Patterns</h2>
+<h3 id="analysis-pattern">Analysis Pattern</h3>
+<pre tabindex="0"><code>Analyze [TOPIC] by examining:
+- Current state
+- Key challenges
+- Opportunities
+- Recommendations
+
+Format as a professional report with executive summary.
+</code></pre><h3 id="comparison-pattern">Comparison Pattern</h3>
+<pre tabindex="0"><code>Compare [OPTION A] vs [OPTION B]:
+
+| Criteria      | Option A | Option B | Winner |
+|---------------|----------|----------|--------|
+| [Criterion 1] |          |          |        |
+
+Include overall recommendation.
+</code></pre><h3 id="creative-brief-pattern">Creative Brief Pattern</h3>
+<pre tabindex="0"><code>Create [CONTENT TYPE] for [AUDIENCE]:
+
+- Objective: [GOAL]
+- Tone: [VOICE/STYLE]
+- Key Messages: [3-5 points]
+- Length: [WORD COUNT]
+- Call-to-action: [DESIRED ACTION]
+</code></pre><hr>
+<p>© 2025 Prompt Engineering Guide | Master effective AI communication</p>
+
+    </div>
+    
+    <footer class="post-footer">
+        <div class="post-nav">
+            
+            <div class="post-nav-item prev">
+                <span class="post-nav-label">← Previous</span>
+                <a href="https://KoenvanderBorght-Dev.github.io/posts/why-i-chose-hugo/" class="post-nav-title">Why I Chose Hugo for My Personal Website</a>
+            </div>
+            
+            
+            
+        </div>
+    </footer>
+</article>
+
+
+            
+        </main>
+
+
+        <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-title">connect_with_me</h3>
+            <div class="social-links">
+                
+                <a href="https://github.com/KoenvanderBorght-Dev/" class="social-link" target="_blank" rel="noopener">
+                    <span class="social-icon">→</span>
+                    <span>GitHub</span>
+                </a>
+                
+                
+                <a href="https://www.linkedin.com/in/koen-van-der-borght-tilburg/" class="social-link" target="_blank" rel="noopener">
+                    <span class="social-icon">→</span>
+                    <span>LinkedIn</span>
+                </a>
+                
+                
+                
+                <a href="mailto:koenvanderborght@outlook.com" class="social-link">
+                    <span class="social-icon">→</span>
+                    <span>Email</span>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-title">quick_access</h3>
+            <div class="footer-links">
+                <a href="/posts" class="footer-link">~/blog</a>
+                <a href="/projects" class="footer-link">~/projects</a>
+                <a href="/about" class="footer-link">~/about</a>
+                <a href="/index.xml" class="footer-link">~/rss</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-title">system_info</h3>
+            <div class="system-info">
+                <div class="info-line">
+                    <span class="info-label">Built with:</span>
+                    <span class="info-value">Hugo 0.147.3</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">Theme:</span>
+                    <span class="info-value">Terminal Dev</span>
+                </div>
+                <div class="info-line">
+                    <span class="info-label">Last build:</span>
+                    <span class="info-value">2025-05-28 10:54</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="copyright">
+            <span>© 2025 Koen van der Borght. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+</body>
+</html>
