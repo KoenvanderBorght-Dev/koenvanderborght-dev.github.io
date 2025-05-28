@@ -14,6 +14,9 @@ publishDir = "docs"
   ShowToc = true
   defaultTheme = "light"
   enableTaglineTypingEffect = false
+  linkedin = "https://www.linkedin.com/in/koen-van-der-borght-tilburg/"
+  github = "https://github.com/KoenvanderBorght-Dev/"
+  email = "koenvanderborght@outlook.com"
 
 [params.homeInfoParams]
   Title = "Hi, I'm Koen"
