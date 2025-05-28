@@ -30,7 +30,7 @@
 
 
 
-<link rel="stylesheet" href="https://KoenvanderBorght-Dev.github.io/main.b0d7acb974239448a580c8c9d8e1f2c9061b23ff14457833d101771b689d0800.css" integrity="sha256-sNesuXQjlEilgMjJ2OHyyQYbI/8URXgz0QF3G2idCAA=">
+<link rel="stylesheet" href="https://KoenvanderBorght-Dev.github.io/main.1638b37095c3e0f9d9770b702a2980db28795a043820ce8ec7303a0ab011c9a1.css" integrity="sha256-FjizcJXD4PnZdwtwKimA2yh5WgQ4IM6OxzA6CrARyaE=">
 
 
 
@@ -155,17 +155,17 @@
                 
             </div>
         </div>
-        
+
         <div class="footer-section">
             <h3 class="footer-title">quick_access</h3>
             <div class="footer-links">
-                <a href="/posts" class="footer-link">~/blog</a>
-                <a href="/projects" class="footer-link">~/projects</a>
-                <a href="/about" class="footer-link">~/about</a>
-                <a href="/index.xml" class="footer-link">~/rss</a>
+                <a href="/%20posts" class="footer-link">~/blog</a>
+                <a href="/%20projects" class="footer-link">~/projects</a>
+                <a href="/%20about" class="footer-link">~/about</a>
+                <a href="/%20index.xml" class="footer-link">~/rss</a>
             </div>
         </div>
-        
+
         <div class="footer-section">
             <h3 class="footer-title">system_info</h3>
             <div class="system-info">
@@ -179,18 +179,50 @@
                 </div>
                 <div class="info-line">
                     <span class="info-label">Last build:</span>
-                    <span class="info-value">2025-05-28 10:54</span>
+                    <span class="info-value">2025-05-28 14:14</span>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="footer-bottom">
         <div class="copyright">
             <span>© 2025 Koen van der Borght. All rights reserved.</span>
         </div>
     </div>
 </footer>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+     
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        root.classList.add('light-mode');
+        root.classList.remove('dark-mode');
+    } else if (savedTheme === 'dark') {
+        root.classList.add('dark-mode');
+        root.classList.remove('light-mode');
+    }
+
+    
+    themeToggle.addEventListener('click', () => {
+        if (root.classList.contains('light-mode')) {
+            root.classList.remove('light-mode');
+            root.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else if (root.classList.contains('dark-mode')) {
+            root.classList.remove('dark-mode');
+            root.classList.remove('light-mode'); 
+            localStorage.removeItem('theme');
+        } else {
+            root.classList.add('light-mode');
+            root.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+</script>
     </div>
 
     
