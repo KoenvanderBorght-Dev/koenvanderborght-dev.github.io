@@ -1,0 +1,25 @@
+<article class="post">
+    <header class="post-header">
+        <div class="post-meta">
+            <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+            <span class="read-time">• {{ .ReadingTime }} min read</span>
+        </div>
+        <h3 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h3>
+    </header>
+    <div class="post-content">
+        {{ if .Description }}
+            <p>{{ .Description }}</p>
+        {{ else }}
+            <p>{{ .Summary | truncate 300 }}</p>
+        {{ end }}
+        {{ if .Params.tags }}
+        <div class="post-tags">
+            {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</article>
