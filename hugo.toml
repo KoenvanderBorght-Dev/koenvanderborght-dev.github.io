@@ -2,7 +2,6 @@ baseURL = "https://KoenvanderBorght-Dev.github.io/"
 languageCode = "en-us"
 title = "Koen van der Borght"
 theme = "terminal-dev"
-publishDir = "docs"
 
 [caches]
   [caches.images]
