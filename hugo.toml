@@ -4,6 +4,10 @@ title = "Koen van der Borght"
 theme = "terminal-dev"
 publishDir = "docs"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   description = "Senior developer, technical lead, and lifelong learner."
   ShowReadingTime = true
