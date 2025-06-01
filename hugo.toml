@@ -7,6 +7,7 @@ publishDir = "docs"
 [params]
   description = "Senior developer, technical lead, and lifelong learner."
   ShowReadingTime = true
+  ShowSystemStatus = false
   ShowShareButtons = false
   ShowCodeCopyButtons = true
   ShowPostNavLinks = true
@@ -17,13 +18,6 @@ publishDir = "docs"
   linkedin = "https://www.linkedin.com/in/koen-van-der-borght-tilburg/"
   github = "https://github.com/KoenvanderBorght-Dev/"
   email = "koenvanderborght@outlook.com"
-
-[params.homeInfoParams]
-  Title = "Hi, I'm Koen"
-  Content = "Senior developer & tech lead with a passion for performance, architecture, and practical AI."
-
-[params.assets]
-  disableHLJS = false
 
 [menu]
   [[menu.main]]
@@ -56,8 +50,60 @@ publishDir = "docs"
     url = "/contact/"
     weight = 5
 
+
+[params.homeInfoParams]
+  Title = "Hi, I'm Koen"
+  Content = "Senior developer & tech lead with a passion for performance, architecture, and practical AI."
+
+[params.assets]
+  disableHLJS = false
 [params.social]
   title = "Koen van der Borght"
   image = "images/og-preview.png"
   description = "Senior developer & tech lead with a passion for performance and architecture."
   type = "website"
+
+# [pagination]
+# pagerSize = 5
+#
+# [params.author]
+# name = "Koen van der Borght"
+#
+#
+# [[menu.main]]
+#   identifier = "home"
+#   name = "Home"
+#   url = "/"
+#   weight = 1
+#
+# [[menu.main]]
+#   identifier = "about"
+#   name = "About"
+#   url = "/about/"
+#   weight = 2
+#
+# [[menu.main]]
+#   identifier = "projects"
+#   name = "Projects"
+#   url = "/projects/"
+#   weight = 3
+#
+# [[menu.main]]
+#   identifier = "blog"
+#   name = "Blog"
+#   url = "/posts/"
+#   weight = 4
+#
+# [[menu.main]]
+#   identifier = "contact"
+#   name = "Contact"
+#   url = "/contact/"
+#   weight = 5
+#
+# [markup.goldmark.renderer]
+# unsafe = true
+#
+# [markup.highlight]
+# style = 'catppuccin-frappe'
+#
+
